@@ -1,0 +1,63 @@
+= Rails Localisation YMAL Auto Translator
+
+Use it:
+  http://tanyi.info/rails-localisation-yaml-translator.html
+
+This little tool will automatically translate Rails localization yaml data into your specific.
+This translator understands YMAL localisation data files, and will automatically presever placeholder strings ({{foo}}) in the cointent.
+
+E.g. Feed following yaml into this tool:
+
+  en:
+    global:
+      click_here:   "Click here"
+      submit:       "Submit"
+      cancel:       "Cancel"
+      preview:      "Preview"
+      create:       "Create"
+      edit:         "Edit"
+      update:       "Update"
+      upload:       "Upload"
+      save:         "Save"
+      delete:       "Delete"
+      destroy:      "Destroy"
+      are_you_sure: "Are you sure?"
+      see_all:      "See All"
+      show:         "Show"
+      back:         "Back"
+      the_site:     "the site"
+      ago:          "{{time_ago}} ago"
+      demo_site:    "This is a demonstration site.<br/>Data may be modified or removed without warning."
+      automated_message: "Note: this is an automated message; please do not reply, as there's no human at the other end of it."
+      thanks:       "Thanks!"
+      or:           " or "
+      warning:      "Warning"
+    
+Then set the target language to "(zh-CN)Simplified Chinese", and hit the "Translate" button. You will got the followoing YMAL
+
+  en:
+    global:
+      click_here:"点击这里"
+      submit:"提交"
+      cancel:"取消"
+      preview:"预览"
+      create:"创建"
+      edit:"编辑"
+      update:"更新"
+      upload:"上传"
+      save:"保存"
+      delete:"删除"
+      destroy:"销毁"
+      are_you_sure:"您确定吗？"
+      see_all:"查看全部"
+      show:"显示"
+      back:"后面"
+      the_site:"网站"
+      ago:"{{time_ago}}前"
+      demo_site:"这是一个示范网站。 <br/>数据可能被修改或删除在没有警告。"
+      automated_message:"注：这是一个自动发送的邮件;请不要回复，因为没有任何人在另一端的。"
+      thanks:"谢谢！"
+      or:"奥勒岗"
+      warning:"警告"
+
+
